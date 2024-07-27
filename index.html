@@ -52,11 +52,25 @@
                 <div class="project-content">
                     <p>Is a web platform designed to facilitate the management and uploading of daily, monthly, and yearly academic reports. The website allows authorized users to upload reports containing important data related to academic studies and activities, which can then be easily downloaded by other users. The platform features a straightforward and user-friendly interface, enabling seamless uploading and downloading of reports without any additional data visualization features.</p>
                    <br>
-                        <h3>Schema Diagram</h3>
-                    <br>
-                    <img src="C:\Users\Salma\Downloads\Screenshot 2024-07-26 225626.png" alt="Project Report Image 1" class="project-image">
-                     <p>Additional details or explanations about the project can be included here. This section can be used to expand on specific aspects of the project or provide more context.</p> 
-                    <br>
+<h3>Schema Diagram</h3>
+<br>
+<img src="https://github.com/salma-nour-eldeen6/Portfolio-Salma-Nour-Eldeen/blob/master/Screenshot%202024-07-27%20230650.png" class="project-image" alt="Schema Diagram">
+<br>
+<p>
+    The <strong>reports_new</strong> database is designed to manage a reporting system with various types of reports and user interactions. It contains the following tables:
+</p>
+<ul>
+    <li><strong>uploaders</strong>: Stores information about users who upload reports, including their unique ID, username, and password.</li>
+    <li><strong>downloaders</strong>: Records details of users who download reports, including their unique ID, username, password, and email address.</li>
+    <li><strong>daily_reports</strong>: Holds daily reports, including their unique ID, name, date, content, and the ID of the user who uploaded them.</li>
+    <li><strong>monthly_reports</strong>: Stores monthly reports, with fields for a unique ID, name, date, content, and uploader ID.</li>
+    <li><strong>yearly_reports</strong>: Keeps yearly reports, detailing their unique ID, name, date, content, and uploader ID.</li>
+    <li><strong>downloader_daily_reports</strong>: Manages the many-to-many relationship between downloaders and daily reports, linking downloader IDs to daily report IDs.</li>
+    <li><strong>downloader_monthly_reports</strong>: Handles the many-to-many relationship between downloaders and monthly reports, connecting downloader IDs to monthly report IDs.</li>
+    <li><strong>downloader_yearly_reports</strong>: Facilitates the many-to-many relationship between downloaders and yearly reports, associating downloader IDs with yearly report IDs.</li>
+</ul>
+<br>
+
                         <h3>Entity-Relationship Diagram - ERD</h3>
                     <br>
                     <img src="C:\Users\Salma\Downloads\Screenshot 2024-07-26 225626.png" alt="Project Report Image 1" class="project-image">
