@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma Nour-Eldeen</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+ 
+<body>
+    <header>
+        <button class="nav-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('trainings')">Trainings</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+         
+    </header>
+    
+    <main>
+        <section id="home" class="section active">
+            <div class="home-content">
+                <div class="info">
+                    <h1>Salma Nour-Eldeen</h1>
+                    <p>CS Student || jenior data engineer</p>
+                    <p class="about">I am a Computer Science and Artificial Intelligence student. Currently, I'm an intern at Digital Egypt 
+                        Pioneers Initiative (DEPI), where I'm gaining hands-on experience in data engineering. I thrive on 
+                        continuous learning and am excited to make impactful contributions through innovation and teamwork. 
+                        I look forward to making more progress and continuous learning in data engineering.</p>
+ 
+                    <div class="education">
+                        <h2>Education</h2>
+                        <p>OCTOBER 2022 - JUNE 2026 <br>
+                            COMPUTER SCIENCE AND ARTIFICIAL INTELLIGENCE HELWAN UNIVERSITY 
+                            Studying Bachelor of Computer Science and Artificial Intelligence</p>
+                    </div>
+                </div>
+                <img src="D:\portfolio\WhatsApp Image 2024-05-30 at 00.47.12_e7780809.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </section>
+
+
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+            
+            <div class="project">
+                <h2>REPORTS Project</h2>
+                <div class="project-content">
+                    <p>Is a web platform designed to facilitate the management and uploading of daily, monthly, and yearly academic reports. The website allows authorized users to upload reports containing important data related to academic studies and activities, which can then be easily downloaded by other users. The platform features a straightforward and user-friendly interface, enabling seamless uploading and downloading of reports without any additional data visualization features.</p>
+                    <br>
+                        <h3>Database Schema</h3>
+
+                    <br>
+                    <img src="C:\Users\Salma\Downloads\Screenshot 2024-07-26 225626.png" alt="Project Report Image 1" class="project-image">
+                    <p>Additional details or explanations about the project can be included here. This section can be used to expand on specific aspects of the project or provide more context.</p>
+                    <img src="C:\Users\Salma\Downloads\Screenshot 2024-07-26 225626.png" alt="Project Report Image 2" class="project-image">
+                </div>
+            </div>
+            
+            <!-- <div class="project">
+                <h2>Project Title 2</h2>
+                <div class="project-content">
+                    <p>Description of the project...</p>
+                    <img src="path-to-image3.jpg" alt="Project Image 3" class="project-image">
+                    <p>Additional details or explanations about Project Title 2 can be included here. Provide more information or context as needed.</p>
+                </div>
+            </div> -->
+            
+        </section>
+        
+
+        <section id="trainings" class="section">
+            <h1>My Trainings</h1>
+            
+            <!-- Training 1 -->
+            <div class="training">
+                <h2>EGSA IT-departement internship</h2>
+                <div class="sections-container">
+                    <!-- Section 1 of Training 1 -->
+                    <div class="training-section">
+                        <h3>Section 1</h3>
+                        <p>Notes about this section...</p>
+                        <!-- Add more text blocks as needed -->
+                        <p>Additional note for Section 1...</p>
+                    </div>
+                    <!-- Section 2 of Training 1 
+                    <div class="training-section">
+                        <h3>Section 2</h3>
+                        <p>Notes about Section 2...</p>
+                        
+                        <p>Another note for Section 2...</p>-->
+                    </div>
+                </div>
+            </div>
+            
+             
+            
+            <!-- Add more trainings as needed -->
+        </section>
+        
+        
+         
+
+        <section id="contact" class="section">
+            <h1>Contact Me</h1>
+            <p>Email: <a href="mailto:salmamahdynooreldeen@gmail.com">salmamahdynooreldeen@gmail.com</a></p>
+            <p>Phone: (+20) 1143564798</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/salma-nour-eldeen-b16791266" class="contact-link" title="LinkedIn">Visit my LinkedIn profile</a></p>
+        </section>
+        
+    </main>
+
+
+    <footer>
+         
+        <div class="contact-info">
+            <a href="mailto:salmamahdynooreldeen@gmail.com" class="contact-link" title="Email">
+                <img src="https://th.bing.com/th/id/R.3cc4d71ef0d49b1de9771d3d2159a57d?rik=4DhEKOaV9Xy05w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2femail-icon-png-email-icon-image-122-2400.png&ehk=ysN53EM4TZXnpAYPdVx4gyPi9yAxhixiW8uwFiA1CvM%3d&risl=&pid=ImgRaw&r=0" alt="Email Icon" class="contact-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/salma-nour-eldeen-b16791266" class="contact-link" title="LinkedIn">
+                <img src="https://th.bing.com/th/id/R.7797eeb65f7f1cca220f484f4ee63297?rik=bHE7C4CsHRiS8g&pid=ImgRaw&r=0" alt="LinkedIn Icon" class="contact-icon">
+            </a>
+        </div>
+        
+        <p>&copy; 2024 Salma Nour-Eldeen</p>
+    </footer>
+    
+
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
